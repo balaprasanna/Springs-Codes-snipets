@@ -1,0 +1,19 @@
+<form action="process" method="post">
+		<input type="submit" value="Leave View" />
+	</form>
+	
+	// 
+	
+	
+	 <c:url var="appurl" scope="page" value="/Approve">
+                        <c:param name="comment" value="${com}"/>
+                        <c:param name="status" value="Approved"/>
+                    </c:url>
+                    <a href="${appurl}">Approve</a>
+                </td>
+                <td>
+                    <c:url var="rejurl" scope="page" value="/Reject">
+                        <c:param name="comment" value="${com}"/>
+                        <c:param name="status" value="Rejected"/>
+                    </c:url>
+                    <a href="${rejurl}">Reject</a>
